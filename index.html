@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SL 1 Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/kebs_logo.png" alt="kebs logo" />
+      <h1>Fill in the SL1 Form</h1>
+    </header>
+    <main>
+      <div class="success-div">
+        <h2>Success</h2>
+        <p>Your details have been saved successfully</p>
+      </div>
+      
+      <form method="post">
+        <div class="grid-container">
+          <div class="grid-item">
+            <label for="kraPin" style="margin-bottom: 7px">KRA Pin:</label>
+            <input type="text" class="input" id="kraPin" />
+          </div>
+          <div class="grid-item">
+            <label for="companyName" style="margin-bottom: 7px"
+              >Company Name:</label
+            >
+            <input type="text" class="input" id="companyName" />
+          </div>
+          <div class="grid-item">
+            <label for="address" style="margin-bottom: 7px">Address:</label>
+            <input type="text" class="input" id="address" />
+          </div>
+          <div class="grid-item">
+            <label for="email" style="margin-bottom: 7px"
+              >Email Address:
+            </label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="grid-item">
+            <label for="phoneNo" style="margin-bottom: 7px"
+              >Phone Number:</label
+            >
+            <input type="tel" class="input" id="phoneNo" />
+          </div>
+          <div class="grid-item">
+            <label for="salesValue" style="margin-bottom: 7px"
+              >Total Value of Sales (Ksh):</label
+            >
+            <input type="text" class="input" id="salesValue" />
+          </div>
+          <div class="grid-item">
+            <label for="vat" style="margin-bottom: 7px"
+              >Rate of Levy (0.2%):</label
+            >
+            <input type="text" class="input" id="vat" />
+          </div>
+          <div class="grid-item">
+            <label for="payableLevy" style="margin-bottom: 7px"
+              >Total Levy Payable (Ksh):</label
+            >
+            <input type="text" class="input" id="payableLevy" disabled />
+          </div>
+          <div class="grid-item">
+            <label for="periodFrom" style="margin-bottom: 7px"
+              >Period From:</label
+            >
+            <input type="date" name="periodFrom" id="periodFrom" />
+          </div>
+          <div class="grid-item">
+            <label for="periodTo" style="margin-bottom: 7px">Period To</label>
+            <input type="date" name="periodTo" id="periodTo" />
+          </div>
+        </div>
+
+        <button class="btnSubmit" id="btnSubmit">SUBMIT</button>
+      </form>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
